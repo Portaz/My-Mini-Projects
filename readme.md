@@ -96,8 +96,8 @@ This is a **work in progress** — projects will be added, improved, and sometim
 
 ### 🌍 Web Development
 
-- [ ] HTML
-- [ ] CSS
+- [x] HTML
+- [x] CSS
 - [ ] JavaScript
 - [ ] DOM
 - [ ] APIs
