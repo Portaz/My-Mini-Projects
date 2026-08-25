@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- Header -->
+    <header class="dashboard-header">
+
+        <div class="header-left">
+
+            <div class="header-icon">
+                <i class="fa-solid fa-chart-pie"></i>
+            </div>
+
+            <div>
+                <h1>Project Dashboard</h1>
+                <p>
+                    Networking, cybersecurity and Python projects
+                </p>
+            </div>
+
+        </div>
+
+        <div class="header-right">
+            <span class="project-count">
+                <i class="fa-solid fa-folder"></i>
+                <span id="totalProjects">0</span> Projects
+            </span>
+        </div>
+
+    </header>
+
+
+    <!-- Statistics -->
+    <section class="stats-section">
+
+        <div class="stat-card">
+            <div class="stat-icon total">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+
+            <div>
+                <span class="stat-label">Total Projects</span>
+                <strong id="totalCount">0</strong>
+            </div>
+        </div>
+
+
+        <div class="stat-card">
+            <div class="stat-icon progress">
+                <i class="fa-solid fa-spinner"></i>
+            </div>
+
+            <div>
+                <span class="stat-label">In Progress</span>
+                <strong id="progressCount">0</strong>
+            </div>
+        </div>
+
+
+        <div class="stat-card">
+            <div class="stat-icon planned">
+                <i class="fa-solid fa-clock"></i>
+            </div>
+
+            <div>
+                <span class="stat-label">Planned</span>
+                <strong id="plannedCount">0</strong>
+            </div>
+        </div>
+
+
+        <div class="stat-card">
+            <div class="stat-icon completed">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+
+            <div>
+                <span class="stat-label">Completed</span>
+                <strong id="completedCount">0</strong>
+            </div>
+        </div>
+
+
+        <div class="stat-card">
+            <div class="stat-icon future">
+                <i class="fa-solid fa-forward"></i>
+            </div>
+
+            <div>
+                <span class="stat-label">Future</span>
+                <strong id="futureCount">0</strong>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Project Grid -->
+    <section>
+
+        <div class="section-heading">
+            <div>
+                <h2>Projects</h2>
+                <p>Track your learning and development projects.</p>
+            </div>
+
+            <div class="legend">
+                <span>
+                    <i class="fa-solid fa-circle status-dot in-progress"></i>
+                    In Progress
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-circle status-dot planned"></i>
+                    Planned
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-circle status-dot completed"></i>
+                    Completed
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-circle status-dot future"></i>
+                    Future
+                </span>
+            </div>
+        </div>
+
+
+        <div id="projectGrid" class="row g-4"></div>
+
+    </section>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
